@@ -31,6 +31,10 @@ img {
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -54,11 +58,13 @@ img {
     overflow: hidden;
 }
 
+/* HEADER */
+
 .header {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header .container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,12 +133,14 @@ img {
     color: #404bbf;
 }
 
+/* HERO */
+
 .main-button {
     background-color: #2e2f42;
     padding: 188px 0;
 }
 
-.main-button .container {
+.hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,22 +161,24 @@ img {
     display: block;
     min-width: 169px;
     height: 56px;
+    padding: 16px 32px;
     border: none;
     border-radius: 4px;
+    background-color: #4d5ae5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    background-color: #4d5ae5;
-    cursor: pointer;
 }
 
 .main-button-order:hover,
 .main-button-order:focus {
     background-color: #404bbf;
 }
+
+/* FEATURES */
 
 .section-main-text {
     padding: 120px 0;
@@ -198,9 +208,10 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* TEAM */
+
 .section-photos {
     background-color: #f4f4fd;
-    padding: 120px 0;
 }
 
 .photos-titel {
@@ -225,6 +236,10 @@ img {
     border-radius: 0 0 4px 4px;
 }
 
+.team-card-content {
+    padding: 32px 0;
+}
+
 .photos-name {
     font-weight: 500;
     font-size: 20px;
@@ -232,7 +247,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -241,8 +255,9 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom: 32px;
 }
+
+/* PORTFOLIO */
 
 .section-photos-portfolio {
     padding: 120px 0;
@@ -270,8 +285,10 @@ img {
     width: calc((100% - 48px) / 3);
 }
 
-.photo-portfolio {
-    width: 100%;
+.portfolio-card-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .photos-name-portfolio {
@@ -281,8 +298,6 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    padding-top: 32px;
-    padding-left: 16px;
 }
 
 .photos-discription-portfolio {
@@ -290,13 +305,9 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-left: 16px;
-    padding-bottom: 32px;
 }
 
-.part-info-photos-portfolio {
-    border: 1px solid #e7e9fc;
-}
+/* FOOTER */
 
 .footer {
     background-color: #2e2f42;
